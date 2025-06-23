@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import theme variables and base styles */
+@import './theme.css';
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Custom components */
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-primary {
+  background-color: rgb(var(--color-primary));
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgb(var(--color-primary));
+  color: rgb(var(--color-primary));
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: rgba(var(--color-primary), 0.1);
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(var(--color-primary), 0.3);
+  outline: none;
+  transition: all 200ms;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px rgba(var(--color-primary), 0.2);
+  border-color: transparent;
+}
+
+/* Header styles */
+header {
+  background-color: rgba(var(--color-primary), 0.5);
+  backdrop-filter: blur(4px);
+}
+
+/* Card styles */
+.card {
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  background-color: rgba(var(--color-bg-secondary), 0.8);
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-2px);
+}
+
+/* Form elements */
+input[type="text"],
+input[type="date"],
+textarea,
+select {
+  @apply input;
+  border-color: rgba(var(--color-primary), 0.3);
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+textarea:focus,
+select:focus {
+  box-shadow: 0 0 0 2px rgba(var(--color-primary), 0.2);
+}
+
+/* Links */
+a:not(.btn) {
+  @apply text-primary hover:underline;
+  color: rgb(var(--color-primary));
+}

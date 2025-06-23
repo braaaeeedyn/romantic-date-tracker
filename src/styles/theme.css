@@ -1,0 +1,144 @@
+/* Theme Variables */
+:root {
+  /* Default theme (Lilac) */
+  --color-primary: 179, 153, 212; /* #b399d4 */
+  --color-primary-dark: 147, 112, 219; /* #9370db */
+  --color-secondary: 138, 43, 226; /* #8a2be2 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 248, 245, 252; /* #f8f5fc */
+  --color-romantic-primary: 179, 153, 212; /* #b399d4 */
+  --color-romantic-secondary: 196, 167, 201; /* #c4a7c9 */
+}
+
+/* Mauve Theme */
+[data-theme="mauve"] {
+  --color-primary: 183, 157, 201; /* #b79dc9 */
+  --color-primary-dark: 147, 112, 219; /* #9370db */
+  --color-secondary: 138, 43, 226; /* #8a2be2 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 245, 240, 250; /* #f5f0fa */
+}
+
+/* Rose Theme */
+[data-theme="rose"] {
+  --color-primary: 255, 160, 203; /* #ffa0cb */
+  --color-primary-dark: 255, 105, 180; /* #ff69b4 */
+  --color-secondary: 199, 21, 133; /* #c71585 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 255, 240, 248; /* #fff0f8 */
+  --color-romantic-primary: 255, 160, 203; /* #ffa0cb */
+  --color-romantic-secondary: 255, 182, 193; /* #ffb6c1 */
+}
+
+/* Lilac Theme */
+[data-theme="lilac"] {
+  --color-primary: 179, 153, 212; /* #b399d4 */
+  --color-primary-dark: 147, 112, 219; /* #9370db */
+  --color-secondary: 138, 43, 226; /* #8a2be2 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 248, 245, 252; /* #f8f5fc */
+  --color-romantic-primary: 179, 153, 212; /* #b399d4 */
+  --color-romantic-secondary: 196, 167, 201; /* #c4a7c9 */
+}
+
+/* Peach Theme */
+[data-theme="peach"] {
+  --color-primary: 255, 183, 178; /* #ffb7b2 */
+  --color-primary-dark: 255, 138, 128; /* #ff8a80 */
+  --color-secondary: 255, 87, 34; /* #ff5722 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 255, 245, 243; /* #fff5f3 */
+  --color-romantic-primary: 255, 183, 178; /* #ffb7b2 */
+  --color-romantic-secondary: 255, 204, 188; /* #ffccbc */
+}
+
+/* Passion Theme */
+[data-theme="passion"] {
+  --color-primary: 209, 0, 71; /* #d10047 */
+  --color-primary-dark: 180, 0, 60; /* #b4003c */
+  --color-secondary: 255, 20, 147; /* #ff1493 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 255, 240, 245; /* #fff0f5 */
+  --color-romantic-primary: 209, 0, 71; /* #d10047 */
+  --color-romantic-secondary: 255, 105, 180; /* #ff69b4 */
+}
+
+/* Coral Theme */
+[data-theme="coral"] {
+  --color-primary: 255, 126, 121; /* #ff7e79 */
+  --color-primary-dark: 255, 90, 90; /* #ff5a5a */
+  --color-secondary: 255, 69, 0; /* #ff4500 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 255, 245, 244; /* #fff5f4 */
+  --color-romantic-primary: 255, 126, 121; /* #ff7e79 */
+  --color-romantic-secondary: 255, 160, 122; /* #ffa07a */
+}
+
+/* Sky Theme */
+[data-theme="sky"] {
+  --color-primary: 137, 207, 240; /* #89cff0 */
+  --color-primary-dark: 100, 180, 225; /* #64b4e1 */
+  --color-secondary: 30, 144, 255; /* #1e90ff */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 240, 248, 255; /* #f0f8ff */
+  --color-romantic-primary: 137, 207, 240; /* #89cff0 */
+  --color-romantic-secondary: 176, 226, 255; /* #b0e2ff */
+}
+
+/* Mint Theme */
+[data-theme="mint"] {
+  --color-primary: 162, 228, 184; /* #a2e4b8 */
+  --color-primary-dark: 120, 200, 150; /* #78c896 */
+  --color-secondary: 0, 201, 87; /* #00c957 */
+  --color-text: 55, 65, 81; /* #374151 */
+  --color-bg: 255, 255, 255; /* #ffffff */
+  --color-bg-secondary: 240, 255, 245; /* #f0fff5 */
+  --color-romantic-primary: 162, 228, 184; /* #a2e4b8 */
+  --color-romantic-secondary: 193, 240, 210; /* #c1f0d2 */
+}
+
+/* Apply theme colors to elements */
+body {
+  background-color: rgb(var(--color-bg));
+  color: rgb(var(--color-text));
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Theme color classes */
+.text-primary { color: rgb(var(--color-primary)); }
+.bg-primary { background-color: rgb(var(--color-primary)); }
+.border-primary { border-color: rgb(var(--color-primary)); }
+
+.text-bg { color: rgb(var(--color-bg)); }
+.bg-bg { background-color: rgb(var(--color-bg)); }
+
+.text-bg-secondary { color: rgb(var(--color-bg-secondary)); }
+.bg-bg-secondary { background-color: rgb(var(--color-bg-secondary)); }
+
+/* Scrollbar theming */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--color-primary), 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-primary));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-primary-dark));
+}

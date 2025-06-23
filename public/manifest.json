@@ -1,0 +1,37 @@
+{
+  "name": "Romantic Date Tracker",
+  "short_name": "Date Tracker",
+  "description": "A private, offline-first web app for couples to document their romantic dates",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF9F9",
+  "theme_color": "#FFD6E0",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["lifestyle", "productivity"],
+  "screenshots": [
+    {
+      "src": "/screenshots/screenshot1.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "/screenshots/screenshot2.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "form_factor": "narrow"
+    }
+  ]
+}

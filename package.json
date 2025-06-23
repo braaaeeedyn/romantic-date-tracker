@@ -1,0 +1,42 @@
+{
+  "name": "romantic-date-tracker",
+  "version": "1.0.0",
+  "homepage": "https://your-github-username.github.io/romantic-date-tracker/",
+  "description": "A private, offline-first web app for couples to document their romantic dates",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write .",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "type": "module",
+  "dependencies": {
+    "@preact/signals": "^1.2.2",
+    "bcryptjs": "^3.0.2",
+    "compressorjs": "^1.2.1",
+    "date-fns": "^2.30.0",
+    "dexie": "^3.2.4",
+    "file-saver": "^2.0.5",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "preact": "^10.19.3",
+    "preact-router": "^4.1.2",
+    "wouter-preact": "^3.7.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.0",
+    "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.9"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
